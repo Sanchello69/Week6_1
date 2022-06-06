@@ -77,6 +77,12 @@ class PiFragment : Fragment() {
         binding?.piTextView?.text = ""
     }
 
+    /**
+     * Код функции piSpigot взят из статьи
+     * "«Краник», или алгоритм для поиска цифр числа Пи"
+     * (https://habr.com/ru/post/188700/).
+     */
+
     private fun piSpigot(n: Int): String {
         // найденные цифры сразу же будем записывать в StringBuilder
         val pi = StringBuilder(n)
